@@ -32,7 +32,7 @@ function(integerInput) {
     }
   };
 
-  factors = [[10, "X"], [1, "I"]];
+  factors = [[100, "C"], [10, "X"], [1, "I"]];
   for (factorIndex = 0; factorIndex < factors.length; factorIndex += 1) {
     if (integerInput % factors[factorIndex][0] === 0) {
       factorCount = integerInput / factors[factorIndex][0];
