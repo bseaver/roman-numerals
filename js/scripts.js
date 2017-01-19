@@ -1,12 +1,10 @@
 // Back end section
 var integerToRomanNumeral =
 function(integerInput) {
-  if (integerInput >= 4000) {
+  if (integerInput >= 4000 || integerInput <= 0) {
     return;
   }
-  if (integerInput === 0) {
-      return "";
-  }
+
 };
 
 

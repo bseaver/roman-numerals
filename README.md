@@ -9,16 +9,13 @@
 ### Specifications:
 
 * Count 0
-  #### blank
+  #### undefined
 
 * Count 4000 plus
   #### undefined
 
 * Count less than 0
   #### undefined
-
-* Input is non a number
-  #### NaN
 
 * Count by 1s up to 3
   #### Example Input: 1, 2, 3
