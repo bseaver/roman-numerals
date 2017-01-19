@@ -1,8 +1,20 @@
 // Back end section
 var integerToRomanNumeral =
 function(integerInput) {
+  var duplicateSymbol = function(count, symbol) {
+    result = "";
+    for (var i = 0; i < count; i++) {
+      result += symbol;
+    }
+    return result;
+  }
+
   if (integerInput >= 4000 || integerInput <= 0) {
     return;
+  }
+
+  if (integerInput >= 1 && integerInput <= 3) {
+    return duplicateSymbol(integerInput, "I");
   }
 
 };
