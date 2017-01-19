@@ -13,6 +13,10 @@ function(integerInput) {
     return;
   }
 
+  if (integerInput === 5) {
+    return "V";
+  }
+
   if (integerInput >= 1 && integerInput <= 3) {
     return duplicateSymbol(integerInput, "I");
   }
