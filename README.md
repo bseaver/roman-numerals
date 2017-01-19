@@ -8,11 +8,11 @@
 
 ### Specifications:
 
-* Count 4000 plus
-  #### undefined
-
 * Count 0
   #### blank
+
+* Count 4000 plus
+  #### undefined
 
 * Count less than 0
   #### undefined
