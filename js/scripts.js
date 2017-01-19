@@ -18,10 +18,22 @@ function(integerInput) {
   if (integerInput === 5) {
     result = "V";
   }
+  var factors = [[50, "L"], [5, "V"]];
+  var factorCount;
+  var factorIndex;
+  for (factorIndex = 0; factorIndex < factors.length; factorIndex += 1) {
+    if (integerInput % factors[factorIndex][0] === 0) {
+      factorCount = integerInput / factors[factorIndex][0];
 
-  var factors = [[10, "X"], [1, "I"]];
-  var factorCount
-  for (var factorIndex = 0; factorIndex < factors.length; factorIndex += 1) {
+      if (factorCount === 1) {
+        result = duplicateSymbol(factorCount, factors[factorIndex][1]);
+      }
+      break;
+    }
+  };
+
+  factors = [[10, "X"], [1, "I"]];
+  for (factorIndex = 0; factorIndex < factors.length; factorIndex += 1) {
     if (integerInput % factors[factorIndex][0] === 0) {
       factorCount = integerInput / factors[factorIndex][0];
 
