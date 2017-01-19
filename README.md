@@ -8,6 +8,18 @@
 
 ### Specifications:
 
+* Count 4000 plus
+  #### undefined
+
+* Count 0
+  #### blank
+
+* Count less than 0
+  #### undefined
+
+* Input is non a number
+  #### NaN
+
 * Count by 1s up to 3
   #### Example Input: 1, 2, 3
   #### Example Output: I, II, III
@@ -59,18 +71,6 @@
 
 * Count 77
   #### Example Output: LXXVII
-
-  * Count 4000 plus
-  #### undefined
-
-  * Count 0
-  #### blank
-
-  * Count less than 0
-  #### undefined
-
-  * Input is non a number
-  #### NaN
 
 * Count 88
   #### Example Output: LXXXVIII
