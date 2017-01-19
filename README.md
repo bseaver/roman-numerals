@@ -8,10 +8,10 @@
 
 ### Specifications:
 
-* Count 0
+* Count <= 0
   #### undefined
 
-* Count 4000 plus
+* Count >= 4000
   #### undefined
 
 * Count less than 0

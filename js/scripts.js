@@ -9,18 +9,30 @@ function(integerInput) {
     return result;
   }
 
+  var result;
+
   if (integerInput >= 4000 || integerInput <= 0) {
-    return;
+    result = undefined;
   }
 
   if (integerInput === 5) {
-    return "V";
+    result = "V";
   }
 
-  if (integerInput >= 1 && integerInput <= 3) {
-    return duplicateSymbol(integerInput, "I");
-  }
+  var factors = [[10, "X"], [1, "I"]];
+  var factorCount
+  for (var factorIndex = 0; factorIndex < factors.length; factorIndex += 1) {
+    if (integerInput % factors[factorIndex][0] === 0) {
+      factorCount = integerInput / factors[factorIndex][0];
 
+      if (factorCount >= 1 && factorCount <= 3) {
+        result = duplicateSymbol(factorCount, factors[factorIndex][1]);
+      }
+      break;
+    }
+  };
+
+  return result;
 };
 
 
