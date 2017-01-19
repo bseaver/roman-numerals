@@ -15,9 +15,6 @@ function(integerInput) {
     result = undefined;
   }
 
-  if (integerInput === 5) {
-    result = "V";
-  }
   var factors = [[500, "D"], [50, "L"], [5, "V"]];
   var factorCount;
   var factorIndex;
