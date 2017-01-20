@@ -14,9 +14,6 @@
 * Count >= 4000
   #### undefined
 
-* Count less than 0
-  #### undefined
-
 * Count by 1s up to 3
   #### Example Input: 1, 2, 3
   #### Example Output: I, II, III

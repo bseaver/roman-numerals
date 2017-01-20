@@ -1,20 +1,14 @@
 // Back end section
-var integerToRomanNumeral =
-function(integerInput) {
-  var duplicateSymbol = function(count, symbol) {
-    result = "";
-    for (var i = 0; i < count; i++) {
-      result += symbol;
-    }
-    return result;
+var duplicateSymbol = function(count, symbol) {
+  result = "";
+  for (var i = 0; i < count; i++) {
+    result += symbol;
   }
+  return result;
+}
 
+var singleNumeral = function(integerInput) {
   var result;
-
-  if (integerInput >= 4000 || integerInput <= 0) {
-    result = undefined;
-  }
-
   var factors = [[500, "D"], [50, "L"], [5, "V"]];
   var factorCount;
   var factorIndex;
@@ -40,6 +34,27 @@ function(integerInput) {
       break;
     }
   };
+
+  return result;
+}
+
+var integerToRomanNumeral =
+function(integerInput) {
+
+  var result;
+
+  if (integerInput >= 4000 || integerInput <= 0) {
+    result = undefined;
+  }
+
+  result = singleNumeral(integerInput);
+
+  if (!result) {
+    if (integerInput >= 6 && integerInput <= 8) {
+      integerInput = integerInput - 5;
+      result = "V" + singleNumeral(integerInput);
+    }
+  }
 
   return result;
 };
