@@ -54,6 +54,16 @@ function(integerInput) {
       integerInput = integerInput - 5;
       result = "V" + singleNumeral(integerInput);
     }
+
+    if (integerInput >= 11 && integerInput <= 13) {
+      integerInput = integerInput - 10;
+      result = "X" + singleNumeral(integerInput);
+    }
+
+    if (integerInput === 15) {
+      integerInput = integerInput - 10;
+      result = "X" + singleNumeral(integerInput);
+    }
   }
 
   return result;
