@@ -54,6 +54,9 @@
 * Count 16, 17, 18
   #### XVI, XVII, XVIII
 
+* Count 4
+  #### IV
+
 * Count 21 - 23
   #### XXI - XXIII
 
@@ -71,9 +74,6 @@
 
 * Count 3888
   #### MMMDCCCLXXXVIII
-
-* Count 4
-  #### IV
 
 * Count 9
   #### IX

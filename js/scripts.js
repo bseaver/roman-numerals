@@ -64,6 +64,14 @@ function(integerInput) {
       integerInput = integerInput - 10;
       result = "X" + singleNumeral(integerInput);
     }
+
+    if (integerInput >= 16 && integerInput <= 18) {
+      var remainder = integerInput % 5;
+      result =
+        singleNumeral(integerInput - remainder - 5) +
+        singleNumeral(integerInput - remainder - 10) +
+        singleNumeral(remainder);
+    }
   }
 
   return result;
